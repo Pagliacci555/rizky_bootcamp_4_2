@@ -1,0 +1,10 @@
+<h3>Insert New Course</h3>
+course ID   : <input type="text"[(ngModel)]="data.id"><p>
+course Name : <input type="text"[(ngModel)]="data.name"><p>
+<button (click)="data.AddCourse()">Create New Course</button><p>
+<h3>Course List</h3>
+=========================
+<div *ngFor="let c of data.courseList">
+ ID : {{ c.id }}<br>
+ Course Name : {{ c.name }}<p>
+</div>
